@@ -4,9 +4,8 @@ import {LinkContainer} from 'react-router-bootstrap';
 
 function Header() {
   return (
-    <div>
       <header>
-        <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="rounded-0" collapseOnSelect>
           <Container>
             <LinkContainer to="/">
               <Navbar.Brand><h3>ProShop</h3></Navbar.Brand>
@@ -25,7 +24,6 @@ function Header() {
           </Container>
         </Navbar>
       </header>
-    </div>
   );
 }
 

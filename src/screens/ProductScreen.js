@@ -110,7 +110,7 @@ function ProductScreen() {
               }
 
               <ListGroup.Item>
-                <Button className='btn-block' type="button" disabled={product.countInStock == 0} onClick={addToCartHandler}>
+                <Button className='btn-block' type="button" disabled={product.countInStock === 0} onClick={addToCartHandler}>
                   ADD TO CART
                 </Button>
               </ListGroup.Item>

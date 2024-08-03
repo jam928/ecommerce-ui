@@ -10,6 +10,7 @@ export const cartReducer = (state={cartItems: []}, action) => {
       const item = action.payload;
       const existItem = state.cartItems.find(x => x.product === item.product);
 
+      // update the cart items item if it exist in local storage else add it to the object
       if(existItem) {
         return {
           ...state,
